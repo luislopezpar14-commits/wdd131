@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #0d1f2d;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+    color: #b0b0b0;
+}
+
+.menu-button.close::before {
+    content: '✕';
+}
+
+.menu-button.close {
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: none;
+    background-color: #1a2f45;
+    padding: 0;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu ul li {
+    border-bottom: 1px solid #0d1f2d;
+}
+
+.nav-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #0d1f2d;
+}
+
+.nav-menu ul li a.active-filter {
+    background-color: #2a5f8f;
+    font-weight: 600;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+#filter-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0d1f2d;
+}
+
+.temple-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.temple-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.temple-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: #1a0a5e;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.temple-card .temple-info {
+    padding: 0 1rem 0.75rem;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.temple-card .temple-info span.label {
+    font-variant: small-caps;
+    font-weight: 600;
+    color: #555;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #0d1f2d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
